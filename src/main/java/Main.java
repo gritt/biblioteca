@@ -1,15 +1,15 @@
-import io.Presenter;
+import service.GreetingPrinter;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        // setup presenter class for stdout
-        Presenter presenter = new Presenter(System.out);
+        GreetingPrinter greetingPrinter = new GreetingPrinter(System.out);
 
-        // setup reader class for stdin
+        greetingPrinter.printWelcome();
 
-        presenter.print("Hello World");
+
+
 
         //presenter.print("Hello World");
     }
