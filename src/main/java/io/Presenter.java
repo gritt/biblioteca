@@ -11,6 +11,6 @@ public class Presenter {
     }
 
     public void print(String message) {
-        printStream.println(message);
+        this.printStream.println(message);
     }
 }
