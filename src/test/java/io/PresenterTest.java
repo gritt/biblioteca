@@ -12,13 +12,13 @@ class PresenterTest {
     }
 
     @Test
-    public void shouldPrintGreetings() {
+    public void shouldPrintAnyString() {
 
         FakePrintStream printStream = new FakePrintStream();
 
         Presenter presenter = new Presenter(printStream);
-        presenter.print("Greetings");
+        presenter.print("Hello World");
 
-        assertThat(printStream.printedString(), is("Greetings"));
+        assertThat(printStream.printedString(), is("Hello World"));
     }
 }
