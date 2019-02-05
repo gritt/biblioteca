@@ -12,50 +12,51 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                '}';
+        return "[" + id + "]" + name + ", by " + author;
     }
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public Book setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public Integer getCopies() {
         return copies;
     }
 
-    public void setCopies(Integer copies) {
+    public Book setCopies(Integer copies) {
         this.copies = copies;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public Book setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public Book setAuthor(String author) {
         this.author = author;
+        return this;
     }
 
     public Date getLaunchDate() {
         return launchDate;
     }
 
-    public void setLaunchDate(Date launchDate) {
+    public Book setLaunchDate(Date launchDate) {
         this.launchDate = launchDate;
+        return this;
     }
 }
