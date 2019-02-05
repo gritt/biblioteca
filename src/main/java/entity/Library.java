@@ -2,7 +2,7 @@ package entity;
 
 import java.util.List;
 
-public class Library {
+public class Library implements LibraryInterface {
 
     private List<Book> books;
 
