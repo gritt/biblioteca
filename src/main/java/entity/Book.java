@@ -12,7 +12,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "[" + id + "]" + name + ", by " + author;
+        return "[" + id + "] " + name + " by " + author;
     }
 
     public Integer getId() {
