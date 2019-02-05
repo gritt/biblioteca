@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Library implements LibraryInterface {
 
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     public Library() {
         /*
@@ -54,15 +54,12 @@ public class Library implements LibraryInterface {
                 .setCopies(10)
                 .setLaunchDate(new Date());
 
-        List<Book> books = new ArrayList<>();
         books.add(designPatterns);
         books.add(cleanCode);
         books.add(theCleanCoder);
         books.add(commandLineKungFu);
         books.add(dataScienceFromScratch);
         books.add(pythonTheBible);
-
-        this.books = books;
     }
 
     public void setBooks(List<Book> books) {
