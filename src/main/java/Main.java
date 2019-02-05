@@ -1,4 +1,5 @@
 import controller.Biblioteca;
+import entity.Library;
 import service.GreetingPrinter;
 
 public class Main {
@@ -8,7 +9,7 @@ public class Main {
         GreetingPrinter greetingPrinter = new GreetingPrinter(System.out);
         greetingPrinter.printWelcome();
 
-        Biblioteca biblioteca = new Biblioteca();
+        Biblioteca biblioteca = new Biblioteca(new Library());
         biblioteca.listBooks();
     }
 }
