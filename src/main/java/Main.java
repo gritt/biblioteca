@@ -9,7 +9,7 @@ public class Main {
         GreetingPrinter greetingPrinter = new GreetingPrinter(System.out);
         greetingPrinter.printWelcome();
 
-        Biblioteca biblioteca = new Biblioteca(new Library());
+        Biblioteca biblioteca = new Biblioteca(new Library(), System.out);
         biblioteca.listBooks();
     }
 }
