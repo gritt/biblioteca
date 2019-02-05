@@ -19,21 +19,21 @@ public class MockLibrary implements LibraryInterface {
                 .setName("Design Patterns, Elements of Reusable Object-Oriented-Software")
                 .setAuthor("Erich Gama")
                 .setCopies(10)
-                .setLaunchDate(new Date("now"));
+                .setLaunchDate(new Date());
 
         Book cleanCode = new Book()
                 .setId(2)
                 .setName("Clean Code")
                 .setAuthor("Robert C Martin")
                 .setCopies(5)
-                .setLaunchDate(new Date("now"));
+                .setLaunchDate(new Date());
 
         Book theCleanCoder = new Book()
                 .setId(3)
                 .setName("The Clean Coder")
                 .setAuthor("Robert C Martin")
                 .setCopies(3)
-                .setLaunchDate(new Date("now"));
+                .setLaunchDate(new Date());
 
         List<Book> books = new ArrayList<>();
         books.add(designPatterns);
