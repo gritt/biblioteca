@@ -1,5 +1,6 @@
 package controller;
 
+import entity.MockEmptyLibrary;
 import entity.MockLibrary;
 import io.FakePrintStream;
 import org.junit.jupiter.api.Test;
@@ -22,5 +23,16 @@ class BibliotecaTest {
                         "[2] Clean Code by Robert C Martin\n" +
                         "[3] The Clean Coder by Robert C Martin\n"
         ));
+    }
+
+    @Test
+    public void shouldListEmptyWhenThereAreNoBooks()
+    {
+        FakePrintStream printStream = new FakePrintStream();
+
+        Biblioteca biblioteca = new Biblioteca(new MockEmptyLibrary(), printStream);
+        biblioteca.listBooks();
+
+        assertThat(printStream.printedString(), is(""));
     }
 }
