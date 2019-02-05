@@ -9,6 +9,6 @@ public class Main {
         greetingPrinter.printWelcome();
 
         Biblioteca biblioteca = new Biblioteca();
-        biblioteca.enter();
+        biblioteca.listBooks();
     }
 }
