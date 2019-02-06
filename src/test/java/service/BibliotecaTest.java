@@ -1,4 +1,4 @@
-package controller;
+package service;
 
 import entity.MockEmptyLibrary;
 import entity.MockLibrary;
@@ -26,8 +26,8 @@ class BibliotecaTest {
     }
 
     @Test
-    public void shouldListEmptyWhenThereAreNoBooks()
-    {
+    public void shouldListEmptyWhenThereAreNoBooks() {
+
         FakePrintStream printStream = new FakePrintStream();
 
         Biblioteca biblioteca = new Biblioteca(new MockEmptyLibrary(), printStream);
