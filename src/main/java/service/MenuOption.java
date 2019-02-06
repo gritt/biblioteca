@@ -4,12 +4,10 @@ public class MenuOption {
 
     private int id;
     private String method;
-    private String parameter;
 
-    public MenuOption(int id, String method, String parameter) {
+    public MenuOption(int id, String method) {
         this.id = id;
         this.method = method;
-        this.parameter = parameter;
     }
 
     public int getId() {
@@ -18,9 +16,5 @@ public class MenuOption {
 
     public String getMethod() {
         return method;
-    }
-
-    public String getParameter() {
-        return parameter;
     }
 }
