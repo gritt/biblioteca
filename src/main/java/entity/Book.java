@@ -1,18 +1,16 @@
 package entity;
 
-import java.util.Date;
-
 public class Book {
 
     private Integer id;
     private Integer copies;
     private String name;
     private String author;
-    private Date launchDate;
+    private int year;
 
     @Override
     public String toString() {
-        return "[" + id + "] " + name + " by " + author;
+        return "[" + id + "] " + name + " - " + author + ". (" + year + ")";
     }
 
     public Integer getId() {
@@ -51,12 +49,12 @@ public class Book {
         return this;
     }
 
-    public Date getLaunchDate() {
-        return launchDate;
+    public int getYear() {
+        return year;
     }
 
-    public Book setLaunchDate(Date launchDate) {
-        this.launchDate = launchDate;
+    public Book setYear(int year) {
+        this.year = year;
         return this;
     }
 }
