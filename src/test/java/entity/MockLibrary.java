@@ -1,7 +1,6 @@
 package entity;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class MockLibrary implements LibraryInterface {
@@ -19,21 +18,21 @@ public class MockLibrary implements LibraryInterface {
                 .setName("Design Patterns, Elements of Reusable Object-Oriented-Software")
                 .setAuthor("Erich Gama")
                 .setCopies(10)
-                .setLaunchDate(new Date());
+                .setYear(1994);
 
         Book cleanCode = new Book()
                 .setId(2)
                 .setName("Clean Code")
                 .setAuthor("Robert C Martin")
                 .setCopies(5)
-                .setLaunchDate(new Date());
+                .setYear(2008);
 
         Book theCleanCoder = new Book()
                 .setId(3)
                 .setName("The Clean Coder")
                 .setAuthor("Robert C Martin")
                 .setCopies(3)
-                .setLaunchDate(new Date());
+                .setYear(2011);
 
         List<Book> books = new ArrayList<>();
         books.add(designPatterns);
