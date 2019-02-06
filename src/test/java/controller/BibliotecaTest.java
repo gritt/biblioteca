@@ -19,9 +19,9 @@ class BibliotecaTest {
         biblioteca.listBooks();
 
         assertThat(printStream.printedString(), is(
-                "[1] Design Patterns, Elements of Reusable Object-Oriented-Software by Erich Gama\n" +
-                        "[2] Clean Code by Robert C Martin\n" +
-                        "[3] The Clean Coder by Robert C Martin\n"
+                "[1] Design Patterns, Elements of Reusable Object-Oriented-Software - Erich Gama. (1994)\n" +
+                        "[2] Clean Code - Robert C Martin. (2008)\n" +
+                        "[3] The Clean Coder - Robert C Martin. (2011)\n"
         ));
     }
 
