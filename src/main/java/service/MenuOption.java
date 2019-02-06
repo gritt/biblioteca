@@ -14,7 +14,7 @@ public class MenuOption {
 
     @Override
     public String toString() {
-        return "[" + id + "] " + name + "\n";
+        return "[" + id + "] " + name;
     }
 
     public String getMethod() {
