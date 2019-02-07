@@ -100,6 +100,30 @@ class LibraryTest {
     }
 
     @Test
+    void shouldShownSuccessMessageAfterCheckout() {
+
+        FakePrintStream printStream = new FakePrintStream();
+        Library library = new Library(mockLibrary, printStream, System.in);
+
+        library.setBookId(0);
+        library.checkoutBook();
+
+        assertThat(printStream.printedString(), is("Thank you! Enjoy the book! \n"));
+    }
+
+    @Test
+    void shouldShownFailMessageWhenCannotCheckout() {
+
+        FakePrintStream printStream = new FakePrintStream();
+        Library library = new Library(mockLibrary, printStream, System.in);
+
+        library.setBookId(10);
+        library.checkoutBook();
+
+        assertThat(printStream.printedString(), is("Sorry, that book is not available\n"));
+    }
+
+    @Test
     public void shouldRemoveBookFromListWhenCheckoutIsSuccessful() {
 
         FakePrintStream printStream = new FakePrintStream();
