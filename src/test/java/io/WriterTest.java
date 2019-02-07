@@ -8,10 +8,6 @@ import static org.junit.Assert.*;
 class WriterTest {
 
     @Test
-    void print() {
-    }
-
-    @Test
     public void shouldPrintAnyString() {
 
         FakePrintStream printStream = new FakePrintStream();
