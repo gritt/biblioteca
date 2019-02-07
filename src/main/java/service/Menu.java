@@ -32,6 +32,11 @@ public class Menu {
 
         StringBuilder listOfOptions = new StringBuilder();
 
+        /*
+         * menu separator line
+         */
+        listOfOptions.append("________________________________________\n");
+
         menuOptions.forEach(menuOption -> {
             listOfOptions.append(menuOption.toString() + "\n");
         });
