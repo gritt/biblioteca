@@ -3,7 +3,6 @@ package entity;
 public class Book {
 
     private Integer id;
-    private Integer copies;
     private String name;
     private String author;
     private int year;
@@ -19,15 +18,6 @@ public class Book {
 
     public Book setId(Integer id) {
         this.id = id;
-        return this;
-    }
-
-    public Integer getCopies() {
-        return copies;
-    }
-
-    public Book setCopies(Integer copies) {
-        this.copies = copies;
         return this;
     }
 
