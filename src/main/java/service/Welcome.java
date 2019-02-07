@@ -12,7 +12,7 @@ public class Welcome {
         this.writer = new Writer(printStream);
     }
 
-    public void printWelcome() {
+    public void show() {
         this.writer.print("Welcome to Library. Your one-stop-shop for great book titles in Bangalore!\n");
     }
 }
