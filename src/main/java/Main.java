@@ -9,27 +9,17 @@ import java.util.List;
 
 public class Main {
 
-    private static io.Reader ioReader;
-
-    private static service.Menu menuService;
-    private static service.Welcome welcomeService;
-    private static service.Library libraryService;
-
-
-    public Main() {
-
-        ioReader = new Reader(System.in);
-
-        menuService = new Menu(System.out);
-        welcomeService = new Welcome(System.out);
-
-        libraryService = new Library(
-                new entity.Library(getBooks()),
-                System.out
-        );
-    }
-
     public static void main(String[] args) {
+
+        Reader ioReader = new Reader(System.in);
+        Menu menuService = new Menu(System.out);
+        Welcome welcomeService = new Welcome(System.out);
+
+        Library libraryService = new Library(
+                new entity.Library(getBooks()),
+                System.out,
+                System.in
+        );
 
         welcomeService.show();
 
