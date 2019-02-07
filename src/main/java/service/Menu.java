@@ -1,6 +1,7 @@
 package service;
 
-import io.Presenter;
+import entity.MenuOption;
+import io.Writer;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -8,15 +9,17 @@ import java.util.List;
 
 public class Menu {
 
-    private Presenter presenter;
+    public static int CONTINUE = -1;
+    public static int QUIT = 0;
+
+    private Writer writer;
     private List<MenuOption> menuOptions = new ArrayList<>();
 
 
     public Menu(PrintStream printStream) {
-        this.presenter = new Presenter(printStream);
+        this.writer = new Writer(printStream);
 
         MenuOption listBooks = new MenuOption(1, "listBooks", "List Books");
-
         menuOptions.add(listBooks);
     }
 
@@ -30,7 +33,7 @@ public class Menu {
 
         listOfOptions.append("\nPlease chose an option [number]: ");
 
-        presenter.print(listOfOptions.toString());
+        writer.print(listOfOptions.toString());
     }
 
     public String getAction(int number) throws IndexOutOfBoundsException {
