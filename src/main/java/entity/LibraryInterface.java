@@ -7,4 +7,6 @@ public interface LibraryInterface {
     public void setBooks(List<Book> books);
 
     public List<Book> getBooks();
+
+    public List<Book> getReservedBooks();
 }
