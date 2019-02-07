@@ -2,11 +2,11 @@ package io;
 
 import java.io.PrintStream;
 
-public class Presenter {
+public class Writer {
 
     private PrintStream printStream;
 
-    public Presenter(PrintStream printStream) {
+    public Writer(PrintStream printStream) {
         this.printStream = printStream;
     }
 
