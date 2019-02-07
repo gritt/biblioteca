@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-class PresenterTest {
+class WriterTest {
 
     @Test
     void print() {
@@ -16,8 +16,8 @@ class PresenterTest {
 
         FakePrintStream printStream = new FakePrintStream();
 
-        Presenter presenter = new Presenter(printStream);
-        presenter.print("Hello World");
+        Writer writer = new Writer(printStream);
+        writer.print("Hello World");
 
         assertThat(printStream.printedString(), is("Hello World"));
     }
