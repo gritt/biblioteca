@@ -21,7 +21,7 @@ class MenuTest {
 
         menu.show();
 
-        assertThat(printStream.printedString(), is("[0] List Books\n[1] Close\n\nPlease select a valid menu option [number]: "));
+        assertThat(printStream.printedString(), is("[0] List Books\n[1] Checkout Book\n[2] Close\n\nPlease select a valid menu option [number]: "));
     }
 
     @Test
