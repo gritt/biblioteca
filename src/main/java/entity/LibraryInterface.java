@@ -9,4 +9,12 @@ public interface LibraryInterface {
     public List<Book> getBooks();
 
     public List<Book> getReservedBooks();
+
+    public void removeBook(Book book);
+
+    public void addBook(Book book);
+
+    public void removeReservedBook(Book book);
+
+    public void addReservedBook(Book book);
 }
