@@ -7,7 +7,7 @@ public class MockEmptyLibrary implements LibraryInterface {
 
     @Override
     public void setBooks(List<Book> books) {
-        // do nothing
+
     }
 
     @Override
@@ -17,7 +17,28 @@ public class MockEmptyLibrary implements LibraryInterface {
     }
 
     @Override
-    public List<Book> getReservedBooks(){
-        return null;
+    public List<Book> getReservedBooks() {
+        List<Book> books = new ArrayList<>();
+        return books;
+    }
+
+    @Override
+    public void removeBook(Book book) {
+
+    }
+
+    @Override
+    public void addBook(Book book) {
+
+    }
+
+    @Override
+    public void removeReservedBook(Book book) {
+
+    }
+
+    @Override
+    public void addReservedBook(Book book) {
+
     }
 }
