@@ -1,7 +1,6 @@
 package service;
 
 import io.FakePrintStream;
-import io.Writer;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -14,8 +13,8 @@ class WelcomeTest {
 
         FakePrintStream printStream = new FakePrintStream();
 
-        Writer writer = new Writer(printStream);
-        writer.print("Welcome to Library. Your one-stop-shop for great book titles in Bangalore!\n");
+        Welcome welcome = new Welcome(printStream);
+        welcome.show();
 
         assertThat(printStream.printedString(), is("Welcome to Library. Your one-stop-shop for great book titles in Bangalore!\n"));
     }
