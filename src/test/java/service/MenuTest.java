@@ -21,7 +21,7 @@ class MenuTest {
 
         menu.show();
 
-        assertThat(printStream.printedString(), is("[1] List Books\n\nPlease chose an option [number]: "));
+        assertThat(printStream.printedString(), is("[1] List Books\n\nPlease select a valid menu option [number]: "));
     }
 
     @Test
@@ -43,7 +43,7 @@ class MenuTest {
         try {
             menu.getAction(4);
         } catch (IndexOutOfBoundsException e) {
-            assertThat(e.getMessage(), is("Invalid option given, please try again \n"));
+            assertThat(e.getMessage(), is("Invalid option given\n"));
         }
     }
 }

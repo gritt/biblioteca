@@ -31,7 +31,7 @@ public class Menu {
             listOfOptions.append(menuOption.toString() + "\n");
         });
 
-        listOfOptions.append("\nPlease chose an option [number]: ");
+        listOfOptions.append("\nPlease select a valid menu option [number]: ");
 
         writer.print(listOfOptions.toString());
     }
@@ -39,7 +39,7 @@ public class Menu {
     public String getAction(int number) throws IndexOutOfBoundsException {
 
         if (number > menuOptions.size() || number < 0) {
-            throw new IndexOutOfBoundsException("Invalid option given, please try again \n");
+            throw new IndexOutOfBoundsException("Invalid option given\n");
         }
 
         MenuOption menuOption = menuOptions.get(number);
