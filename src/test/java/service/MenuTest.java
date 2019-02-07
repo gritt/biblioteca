@@ -24,7 +24,7 @@ class MenuTest {
         assertThat(printStream.printedString(), is(
                 "________________________________________" +
                         "\n[0] List Books" +
-                        "\n[1] Checkout Book" +
+                        "\n[1] Checkou t Book" +
                         "\n[2] Close" +
                         "\n\nPlease select a valid menu option [number]: "
         ));

@@ -75,9 +75,10 @@ public class Library {
             library.removeBook(book);
             library.addReservedBook(book);
 
+            ioWriter.print("Thank you! Enjoy the book! \n");
+
         } catch (Exception ex) {
-            //TODO @gritt, show error message if failed to checkout book
-            return;
+            ioWriter.print("Sorry, that book is not available\n");
         }
 
         status = Menu.CONTINUE;
