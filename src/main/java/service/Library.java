@@ -4,23 +4,27 @@ import entity.LibraryInterface;
 import io.Writer;
 
 import java.io.PrintStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class Library {
 
     private Writer writer;
     private LibraryInterface library;
+    private int status;
 
     public Library(LibraryInterface library, PrintStream printStream) {
         this.writer = new Writer(printStream);
         this.library = library;
     }
 
-    public int execute(String method) {
+    public int execute(String method) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
 
-        System.out.println("do something");
-        System.out.println(method);
+        Method methodReflection;
+        methodReflection = this.getClass().getMethod(method);
+        methodReflection.invoke(this);
 
-        return -1;
+        return status;
     }
 
     public void listBooks() {
@@ -32,5 +36,7 @@ public class Library {
         });
 
         writer.print(listOfBooks.toString());
+
+        status = Menu.CONTINUE;
     }
 }
