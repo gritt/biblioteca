@@ -12,42 +12,42 @@ public class Library implements LibraryInterface {
          * fixed list of books
          */
         Book designPatterns = new Book()
-                .setId(1)
+                .setId(0)
                 .setName("Design Patterns, Elements of Reusable Object-Oriented-Software")
                 .setAuthor("Erich Gama")
                 .setCopies(10)
                 .setYear(1994);
 
         Book cleanCode = new Book()
-                .setId(2)
+                .setId(1)
                 .setName("Clean Code")
                 .setAuthor("Robert C Martin")
                 .setCopies(5)
                 .setYear(2008);
 
         Book theCleanCoder = new Book()
-                .setId(3)
+                .setId(2)
                 .setName("The Clean Coder")
                 .setAuthor("Robert C Martin")
                 .setCopies(3)
                 .setYear(2011);
 
         Book commandLineKungFu = new Book()
-                .setId(4)
+                .setId(3)
                 .setName("Command Line Kung Fu")
                 .setAuthor("Jason Cannon")
                 .setCopies(5)
                 .setYear(2014);
 
         Book dataScienceFromScratch = new Book()
-                .setId(5)
+                .setId(4)
                 .setName("Data Science From Scratch")
                 .setAuthor("Joel Grus")
                 .setCopies(10)
                 .setYear(2015);
 
         Book pythonTheBible = new Book()
-                .setId(6)
+                .setId(5)
                 .setName("Python, The Bible")
                 .setAuthor("Maurice J. Thompson")
                 .setCopies(10)
