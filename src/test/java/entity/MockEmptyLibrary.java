@@ -15,4 +15,9 @@ public class MockEmptyLibrary implements LibraryInterface {
         List<Book> books = new ArrayList<>();
         return books;
     }
+
+    @Override
+    public List<Book> getReservedBooks() {
+        return null;
+    }
 }

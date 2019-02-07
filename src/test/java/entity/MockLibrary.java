@@ -38,4 +38,9 @@ public class MockLibrary implements LibraryInterface {
 
         return books;
     }
+
+    @Override
+    public List<Book> getReservedBooks() {
+        return null;
+    }
 }
