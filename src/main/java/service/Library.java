@@ -39,4 +39,9 @@ public class Library {
 
         status = Menu.CONTINUE;
     }
+
+    public void close()
+    {
+        status = Menu.QUIT;
+    }
 }
