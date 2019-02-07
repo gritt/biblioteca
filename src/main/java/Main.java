@@ -1,39 +1,104 @@
+import entity.Book;
 import io.Reader;
 import service.Library;
 import service.Welcome;
 import service.Menu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
+
+    private static io.Reader ioReader;
+
+    private static service.Menu menuService;
+    private static service.Welcome welcomeService;
+    private static service.Library libraryService;
+
+
+    public Main() {
+
+        ioReader = new Reader(System.in);
+
+        menuService = new Menu(System.out);
+        welcomeService = new Welcome(System.out);
+
+        libraryService = new Library(
+                new entity.Library(getBooks()),
+                System.out
+        );
+    }
 
     public static void main(String[] args) {
 
-        Welcome welcome = new Welcome(System.out);
-        welcome.show();
-
-        Library library = new Library(
-                new entity.Library(),
-                System.out
-        );
-
-
-        Menu menu = new Menu(System.out);
-        Reader reader = new Reader(System.in);
+        welcomeService.show();
 
         int status = Menu.CONTINUE;
+
         do {
             try {
-                menu.show();
+                menuService.show();
 
-                status = library.execute(
-                        menu.getAction(reader.readNumber())
+                status = libraryService.execute(
+                        menuService.getAction(ioReader.readNumber())
                 );
 
             } catch (Exception e) {
-                continue;
+                // continue
             }
 
         } while (status == Menu.CONTINUE);
 
         System.exit(0);
+    }
+
+    private static List<Book> getBooks() {
+
+        List<Book> books = new ArrayList<>();
+
+        Book designPatterns = new Book()
+                .setId(0)
+                .setName("Design Patterns, Elements of Reusable Object-Oriented-Software")
+                .setAuthor("Erich Gama")
+                .setYear(1994);
+
+        Book cleanCode = new Book()
+                .setId(1)
+                .setName("Clean Code")
+                .setAuthor("Robert C Martin")
+                .setYear(2008);
+
+        Book theCleanCoder = new Book()
+                .setId(2)
+                .setName("The Clean Coder")
+                .setAuthor("Robert C Martin")
+                .setYear(2011);
+
+        Book commandLineKungFu = new Book()
+                .setId(3)
+                .setName("Command Line Kung Fu")
+                .setAuthor("Jason Cannon")
+                .setYear(2014);
+
+        Book dataScienceFromScratch = new Book()
+                .setId(4)
+                .setName("Data Science From Scratch")
+                .setAuthor("Joel Grus")
+                .setYear(2015);
+
+        Book pythonTheBible = new Book()
+                .setId(5)
+                .setName("Python, The Bible")
+                .setAuthor("Maurice J. Thompson")
+                .setYear(2018);
+
+        books.add(designPatterns);
+        books.add(cleanCode);
+        books.add(theCleanCoder);
+        books.add(commandLineKungFu);
+        books.add(dataScienceFromScratch);
+        books.add(pythonTheBible);
+
+        return books;
     }
 }
