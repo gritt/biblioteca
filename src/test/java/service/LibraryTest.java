@@ -8,15 +8,15 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-class BibliotecaTest {
+class LibraryTest {
 
     @Test
     public void shouldListBooks() {
 
         FakePrintStream printStream = new FakePrintStream();
 
-        Biblioteca biblioteca = new Biblioteca(new MockLibrary(), printStream);
-        biblioteca.listBooks();
+        Library library = new Library(new MockLibrary(), printStream);
+        library.listBooks();
 
         assertThat(printStream.printedString(), is(
                 "[1] Design Patterns, Elements of Reusable Object-Oriented-Software - Erich Gama. (1994)\n" +
@@ -30,8 +30,8 @@ class BibliotecaTest {
 
         FakePrintStream printStream = new FakePrintStream();
 
-        Biblioteca biblioteca = new Biblioteca(new MockEmptyLibrary(), printStream);
-        biblioteca.listBooks();
+        Library library = new Library(new MockEmptyLibrary(), printStream);
+        library.listBooks();
 
         assertThat(printStream.printedString(), is(""));
     }
