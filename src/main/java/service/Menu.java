@@ -19,7 +19,7 @@ public class Menu {
     public Menu(PrintStream printStream) {
         this.writer = new Writer(printStream);
 
-        MenuOption listBooks = new MenuOption(1, "listBooks", "List Books");
+        MenuOption listBooks = new MenuOption(0, "listBooks", "List Books");
         menuOptions.add(listBooks);
     }
 
