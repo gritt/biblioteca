@@ -20,7 +20,10 @@ public class Menu {
         this.writer = new Writer(printStream);
 
         MenuOption listBooks = new MenuOption(0, "listBooks", "List Books");
+        MenuOption closeApp = new MenuOption(1, "close", "Close");
+
         menuOptions.add(listBooks);
+        menuOptions.add(closeApp);
     }
 
     public void show() {
