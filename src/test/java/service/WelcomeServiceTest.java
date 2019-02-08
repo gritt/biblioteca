@@ -6,16 +6,16 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-class WelcomeTest {
+class WelcomeServiceTest {
 
     @Test
     void shouldPrintWelcome() {
 
         FakePrintStream printStream = new FakePrintStream();
 
-        Welcome welcome = new Welcome(printStream);
-        welcome.show();
+        WelcomeService welcomeService = new WelcomeService(printStream);
+        welcomeService.show();
 
-        assertThat(printStream.printedString(), is("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!\n"));
+        assertThat(printStream.printedString(), is("WelcomeService to Biblioteca. Your one-stop-shop for great book titles in Bangalore!\n"));
     }
 }
