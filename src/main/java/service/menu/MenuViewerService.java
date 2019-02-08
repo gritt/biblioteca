@@ -13,7 +13,7 @@ public class MenuViewerService extends MenuService {
 
         StringBuilder listOfOptions = new StringBuilder();
 
-        listOfOptions.append("________________________________________\n");
+        listOfOptions.append("........................Chose one option from below........................\n");
 
         options.forEach(option -> {
             listOfOptions.append(option.toString() + "\n");
