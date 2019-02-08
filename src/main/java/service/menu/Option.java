@@ -1,4 +1,4 @@
-package menu;
+package service.menu;
 
 public class Option {
 
@@ -13,5 +13,9 @@ public class Option {
     @Override
     public String toString() {
         return "[" + id + "] " + name;
+    }
+
+    public int getId() {
+        return id;
     }
 }
