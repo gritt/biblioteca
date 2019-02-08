@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c56a8256-1426-4994-b403-51325a91a831" name="Default Changelist" comment="changed year">
+    <list default="true" id="c56a8256-1426-4994-b403-51325a91a831" name="Default Changelist" comment="book has id">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,12 +26,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="60">
+              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,26 +40,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/service/MenuTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/Option.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="129" lean-forward="true" selection-start-line="23" selection-start-column="129" selection-end-line="23" selection-end-column="129" />
+            <state relative-caret-position="315">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/Library.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="253">
+              <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding>
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setLibrary#0;class#LibraryService#0" />
+                <element signature="method#listBooks#0;class#LibraryService#0" />
+                <element signature="e#532#662#0" />
+                <element signature="e#590#678#1" />
+                <element signature="method#listReservations#0;class#LibraryService#0" />
+                <element signature="e#889#1054#0" />
+                <element signature="e#948#987#1" />
+                <element signature="method#checkoutBook#0;class#LibraryService#0" />
+                <element signature="e#1110#1142#1" />
+                <element signature="e#1243#1274#1" />
+                <element signature="method#returnBook#0;class#LibraryService#0" />
+                <element signature="e#1369#1406#1" />
+                <element signature="e#1584#1615#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/LibraryServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+              <folding>
+                <element signature="method#setMockBooks#0;class#LibraryServiceTest#0" />
+                <element signature="method#setLibraryService#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReturnEmptyWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReturnListOfBooksWhenLibraryHasBooks#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReturnEmptyWhenNoBooksAreReserved#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReturnListOfReservedBooksWhenBooksAreReserved#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReserveBookWhenValidIdIsGiven#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldNotReserveBookWhenInvalidIdIsGiven#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldNotReserveBookWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldRemoveBookFromListOnCheckout#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReserveMultipleBooksWhenAvailable#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldReturnBookWhenIsReserved#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldNotReturnBookWhenIsNotReserved#0;class#LibraryServiceTest#0" />
+                <element signature="method#shouldNotReturnWhenIdIsInvalid#0;class#LibraryServiceTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +150,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,35 +173,49 @@
         <option value="$PROJECT_DIR$/src/test/java/io/FakeOutputStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/GreetingPrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/Presenter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/LibraryInterface.java" />
-        <option value="$PROJECT_DIR$/src/test/java/entity/MockEmptyLibrary.java" />
-        <option value="$PROJECT_DIR$/src/test/java/entity/MockLibrary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Book.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/BibliotecaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Biblioteca.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/MenuOption.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/service/BibliotecaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/GreetingPrinterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/PresenterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Biblioteca.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/Reader.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/WriterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/WelcomeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/Welcome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Library.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/MockLibrary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/LibraryInterface.java" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/MockEmptyLibrary.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Menu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/MenuTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/MenuOption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Library.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/Welcome.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/WelcomeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/WelcomeServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/MenuBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/MenuHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/Builder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/MenuBuilderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/MenuViewerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/MenuService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/MenuTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Library.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/LibraryService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/LibraryServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="93" />
-    <option name="y" value="23" />
-    <option name="width" value="1587" />
-    <option name="height" value="1027" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -131,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -163,36 +256,45 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
               <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
@@ -206,12 +308,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
-    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -221,7 +322,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
@@ -233,11 +334,12 @@
       <recent name="io" />
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="io" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="menu" />
+      <recent name="io" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -257,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in biblioteca.biblioteca.test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="biblioteca.biblioteca.main" />
@@ -265,15 +367,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in biblioteca.biblioteca.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca.biblioteca.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca.biblioteca.test" />
       <extension name="coverage">
         <pattern>
@@ -282,13 +376,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.LibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="service.LibraryServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryServiceTest.shouldNotReturnBookWhenIsNotReserved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca.biblioteca.test" />
       <extension name="coverage">
         <pattern>
@@ -297,13 +391,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.MenuTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="service.LibraryServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotReturnBookWhenIsNotReserved" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WelcomeTest.shouldPrintWelcome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryServiceTest.shouldNotReturnWhenIdIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca.biblioteca.test" />
       <extension name="coverage">
         <pattern>
@@ -312,8 +407,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.WelcomeTest" />
-      <option name="METHOD_NAME" value="shouldPrintWelcome" />
+      <option name="MAIN_CLASS_NAME" value="service.LibraryServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotReturnWhenIdIsInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryServiceTest.shouldReturnBookWhenIsReserved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca.biblioteca.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.LibraryServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnBookWhenIsReserved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -321,11 +432,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in biblioteca.biblioteca.test" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MenuTest" />
-        <item itemvalue="JUnit.WelcomeTest.shouldPrintWelcome" />
-        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryServiceTest" />
+        <item itemvalue="JUnit.LibraryServiceTest.shouldNotReturnWhenIdIsInvalid" />
+        <item itemvalue="JUnit.LibraryServiceTest.shouldNotReturnBookWhenIsNotReserved" />
+        <item itemvalue="JUnit.LibraryServiceTest.shouldReturnBookWhenIsReserved" />
       </list>
     </recent_temporary>
   </component>
@@ -341,343 +452,9 @@
       <updated>1549250477274</updated>
       <workItem from="1549250480868" duration="224000" />
       <workItem from="1549250774609" duration="363000" />
-      <workItem from="1549251238914" duration="42869000" />
-    </task>
-    <task id="LOCAL-00009" summary="instance Biblioteca object to enter in biblioteca">
-      <created>1549288949894</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1549288949894</updated>
-    </task>
-    <task id="LOCAL-00010" summary="created Library entity class to represent a list of books">
-      <created>1549289446912</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1549289446912</updated>
-    </task>
-    <task id="LOCAL-00011" summary="call biblioteca to listBooks() after printWelcome()">
-      <created>1549332511041</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1549332511041</updated>
-    </task>
-    <task id="LOCAL-00012" summary="created MockLibrary class to return a list of books just like a LibraryInterfaces needs to">
-      <created>1549333025464</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1549333025464</updated>
-    </task>
-    <task id="LOCAL-00013" summary="created LibraryInterface so that a Mock compliant class can be injected for testing">
-      <created>1549333061658</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1549333061658</updated>
-    </task>
-    <task id="LOCAL-00014" summary="real library implements the library interface">
-      <created>1549333081862</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1549333081862</updated>
-    </task>
-    <task id="LOCAL-00015" summary="use actual Library when calling from Main.java">
-      <created>1549333291670</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1549333291670</updated>
-    </task>
-    <task id="LOCAL-00016" summary="updated toString method, changed setters to builder style">
-      <created>1549397369056</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1549397369056</updated>
-    </task>
-    <task id="LOCAL-00017" summary="created mock list of Books in MockLibrary">
-      <created>1549397505105</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1549397505105</updated>
-    </task>
-    <task id="LOCAL-00018" summary="created BibliotecaTest class and shouldListBooks test, which tests if a list of book is printed correctly in the CLI">
-      <created>1549398768765</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1549398768765</updated>
-    </task>
-    <task id="LOCAL-00019" summary="fixed date object params">
-      <created>1549398790788</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1549398790788</updated>
-    </task>
-    <task id="LOCAL-00020" summary="removed comma">
-      <created>1549398809617</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1549398809617</updated>
-    </task>
-    <task id="LOCAL-00021" summary="created Biblioteca class and listBooks method, passes BibliotecaTest">
-      <created>1549398861268</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1549398861268</updated>
-    </task>
-    <task id="LOCAL-00022" summary="created new test case, shouldListEmptyWhenThereAreNoBooks">
-      <created>1549399352618</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1549399352618</updated>
-    </task>
-    <task id="LOCAL-00023" summary="created mock class for empty library">
-      <created>1549399366376</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1549399366376</updated>
-    </task>
-    <task id="LOCAL-00024" summary="craeted fixed list of books in Library constructor">
-      <created>1549399802603</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1549399802603</updated>
-    </task>
-    <task id="LOCAL-00025" summary="initialized empty ArrayList of books">
-      <created>1549400080122</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1549400080122</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added System.out as parameter for Presenter service">
-      <created>1549400181656</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1549400181656</updated>
-    </task>
-    <task id="LOCAL-00027" summary="changed Year / Date object to int, fixed actual made up list of books and mock list of books to set an integer value">
-      <created>1549418679175</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1549418679175</updated>
-    </task>
-    <task id="LOCAL-00028" summary="improved test, to display the book's release year and author">
-      <created>1549418973607</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1549418973607</updated>
-    </task>
-    <task id="LOCAL-00029" summary="updated Book entity, set year as int, fixed toString() method for test">
-      <created>1549419016345</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1549419016345</updated>
-    </task>
-    <task id="LOCAL-00030" summary="fixed package name, fixed indentation">
-      <created>1549461345999</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1549461345999</updated>
-    </task>
-    <task id="LOCAL-00031" summary="moved Biblioteca class from controller to service package">
-      <created>1549461368286</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1549461368286</updated>
-    </task>
-    <task id="LOCAL-00032" summary="created class for MenuOptions">
-      <created>1549461736035</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1549461736035</updated>
-    </task>
-    <task id="LOCAL-00033" summary="removed parameter from MenuOption object">
-      <created>1549461981339</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1549461981339</updated>
-    </task>
-    <task id="LOCAL-00034" summary="added name to Menu, toString() prints the menu line">
-      <created>1549462145437</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1549462145437</updated>
-    </task>
-    <task id="LOCAL-00035" summary="removed \n new line from toString">
-      <created>1549462969216</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1549462969216</updated>
-    </task>
-    <task id="LOCAL-00036" summary="created MenuTest class, test assert that menu is shown">
-      <created>1549476382405</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1549476382405</updated>
-    </task>
-    <task id="LOCAL-00037" summary="asserted that and exceptions ins thrown when a invalid option is given">
-      <created>1549486417217</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1549486417217</updated>
-    </task>
-    <task id="LOCAL-00038" summary="created Menu class to display menu and get options to execute">
-      <created>1549486504207</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1549486504207</updated>
-    </task>
-    <task id="LOCAL-00039" summary="moved MenuOption class to entity package">
-      <created>1549501593657</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1549501593657</updated>
-    </task>
-    <task id="LOCAL-00040" summary="created Reader class to handle user input">
-      <created>1549501682897</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1549501682897</updated>
-    </task>
-    <task id="LOCAL-00041" summary="renamed Presenter class to Writer">
-      <created>1549501695591</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1549501695591</updated>
-    </task>
-    <task id="LOCAL-00042" summary="renamed test class">
-      <created>1549501777978</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1549501777978</updated>
-    </task>
-    <task id="LOCAL-00043" summary="removed empty test">
-      <created>1549501810847</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1549501810847</updated>
-    </task>
-    <task id="LOCAL-00044" summary="renamed test class name">
-      <created>1549502011156</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1549502011156</updated>
-    </task>
-    <task id="LOCAL-00045" summary="renamed GreetingPrinter service to Welcome service, sounds better">
-      <created>1549502411598</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1549502411598</updated>
-    </task>
-    <task id="LOCAL-00046" summary="renamed class to Library">
-      <created>1549502851986</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1549502851986</updated>
-    </task>
-    <task id="LOCAL-00047" summary="fixed WelcomeTest">
-      <created>1549503150889</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1549503150889</updated>
-    </task>
-    <task id="LOCAL-00048" summary="simplified method name">
-      <created>1549503194030</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1549503194030</updated>
-    </task>
-    <task id="LOCAL-00049" summary="moved menu navigation status attributes to Menu class, refactored dependency classes names">
-      <created>1549504124105</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1549504124105</updated>
-    </task>
-    <task id="LOCAL-00050" summary="changed status messages">
-      <created>1549505101465</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505101466</updated>
-    </task>
-    <task id="LOCAL-00051" summary="using reflection to invoke method dynamically by the given String method name">
-      <created>1549505164382</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505164382</updated>
-    </task>
-    <task id="LOCAL-00052" summary="fixed ids, start at zero">
-      <created>1549505217717</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505217717</updated>
-    </task>
-    <task id="LOCAL-00053" summary="fixed menu options index, starts at zero">
-      <created>1549505277121</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505277121</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Main calls service.library to execute the action which was read and parsed from user input">
-      <created>1549505305999</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505305999</updated>
-    </task>
-    <task id="LOCAL-00055" summary="fixed test for new &quot;Close&quot; option">
-      <created>1549505565841</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505565841</updated>
-    </task>
-    <task id="LOCAL-00056" summary="added new &quot;Close option&quot;">
-      <created>1549505578149</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505578149</updated>
+      <workItem from="1549251238914" duration="48386000" />
+      <workItem from="1549559656534" duration="29104000" />
+      <workItem from="1549628141723" duration="6872000" />
     </task>
     <task id="LOCAL-00057" summary="implemented close() method which retunrs a QUIT status to menu service">
       <created>1549505608658</created>
@@ -686,67 +463,413 @@
       <option name="project" value="LOCAL" />
       <updated>1549505608658</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fixed identation">
+      <created>1549506926150</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1549506926150</updated>
+    </task>
+    <task id="LOCAL-00059" summary="added checkout book to menu">
+      <created>1549554773209</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1549554773209</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added checkout book menu item">
+      <created>1549554800607</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1549554800608</updated>
+    </task>
+    <task id="LOCAL-00061" summary="removed copies attribute from books">
+      <created>1549555412218</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1549555412219</updated>
+    </task>
+    <task id="LOCAL-00062" summary="fixed indexes for MockLibrary">
+      <created>1549555841140</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1549555841140</updated>
+    </task>
+    <task id="LOCAL-00063" summary="implemented getReservedBooks method in mock classes">
+      <created>1549556929378</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1549556929378</updated>
+    </task>
+    <task id="LOCAL-00064" summary="removed copies property from books">
+      <created>1549557200406</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1549557200406</updated>
+    </task>
+    <task id="LOCAL-00065" summary="implemented entity methods to checkoutBook and reserveBook, added getReservedBooks to interface class">
+      <created>1549557996478</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1549557996478</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added methods to remove and add books and reservedBooks">
+      <created>1549560976463</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1549560976463</updated>
+    </task>
+    <task id="LOCAL-00067" summary="improved Main class readability">
+      <created>1549561614794</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1549561614794</updated>
+    </task>
+    <task id="LOCAL-00068" summary="improved library interface">
+      <created>1549561988921</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1549561988921</updated>
+    </task>
+    <task id="LOCAL-00069" summary="implemented library methods">
+      <created>1549562090916</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1549562090916</updated>
+    </task>
+    <task id="LOCAL-00070" summary="expect to draw line to separate menu from other stdouts">
+      <created>1549566955357</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1549566955357</updated>
+    </task>
+    <task id="LOCAL-00071" summary="added menu separator line to pass the test">
+      <created>1549566985886</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1549566985886</updated>
+    </task>
+    <task id="LOCAL-00072" summary="removed instances from constructor">
+      <created>1549567027118</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1549567027118</updated>
+    </task>
+    <task id="LOCAL-00073" summary="added test to assert book checkout feature, improved mocking to use the real class">
+      <created>1549567098752</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1549567098752</updated>
+    </task>
+    <task id="LOCAL-00074" summary="added methods to checkout book and to list reserved books">
+      <created>1549567333015</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1549567333015</updated>
+    </task>
+    <task id="LOCAL-00075" summary="added tests to assert that a success or fail message is shown">
+      <created>1549568006261</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1549568006261</updated>
+    </task>
+    <task id="LOCAL-00076" summary="removed mock library, fixed strings">
+      <created>1549583730230</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1549583730230</updated>
+    </task>
+    <task id="LOCAL-00077" summary="simplified Reader class">
+      <created>1549584643516</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1549584643516</updated>
+    </task>
+    <task id="LOCAL-00078" summary="refactored Library class, simplified, does not implement interface">
+      <created>1549584783782</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1549584783782</updated>
+    </task>
+    <task id="LOCAL-00079" summary="space">
+      <created>1549584817951</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1549584817951</updated>
+    </task>
+    <task id="LOCAL-00080" summary="simplified Book class">
+      <created>1549584837148</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1549584837148</updated>
+    </task>
+    <task id="LOCAL-00081" summary="commented code for refactoring">
+      <created>1549584966524</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1549584966524</updated>
+    </task>
+    <task id="LOCAL-00082" summary="fixed welcome message">
+      <created>1549585619651</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1549585619651</updated>
+    </task>
+    <task id="LOCAL-00083" summary="fixed toString to pass test">
+      <created>1549588217427</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1549588217427</updated>
+    </task>
+    <task id="LOCAL-00084" summary="refactoring Library service test class">
+      <created>1549590478357</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1549590478357</updated>
+    </task>
+    <task id="LOCAL-00085" summary="improved attribute name and getter names">
+      <created>1549590517156</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1549590517156</updated>
+    </task>
+    <task id="LOCAL-00086" summary="added assertion for returning a book">
+      <created>1549591544140</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1549591544140</updated>
+    </task>
+    <task id="LOCAL-00087" summary="implemented library service that lists books, lists reservations, performs checkout and return of books by giving the bookId">
+      <created>1549591752423</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1549591752423</updated>
+    </task>
+    <task id="LOCAL-00088" summary="fixed typo in welcome message">
+      <created>1549591877870</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1549591877870</updated>
+    </task>
+    <task id="LOCAL-00089" summary="renamed to WelcomeService">
+      <created>1549591966740</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1549591966740</updated>
+    </task>
+    <task id="LOCAL-00090" summary="simplified menu class">
+      <created>1549592756138</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1549592756138</updated>
+    </task>
+    <task id="LOCAL-00091" summary="implemented MenuBuilder class to build string of menus">
+      <created>1549594406052</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1549594406052</updated>
+    </task>
+    <task id="LOCAL-00092" summary="renamed class to Builder">
+      <created>1549596321144</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1549596321144</updated>
+    </task>
+    <task id="LOCAL-00093" summary="created MenuService which child classes can extends to access options">
+      <created>1549596724467</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1549596724467</updated>
+    </task>
+    <task id="LOCAL-00094" summary="set attributes as protected">
+      <created>1549596744426</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1549596744426</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Created MenuViewer and MenuRouter services that extends MenuService, moved to service.menu package">
+      <created>1549597089946</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1549597089946</updated>
+    </task>
+    <task id="LOCAL-00096" summary="implemented name getter">
+      <created>1549598905903</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1549598905903</updated>
+    </task>
+    <task id="LOCAL-00097" summary="handle switch case through the LibraryService options registered on menu">
+      <created>1549598939390</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1549598939390</updated>
+    </task>
+    <task id="LOCAL-00098" summary="improved MenuViewer presentation">
+      <created>1549598955880</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1549598955880</updated>
+    </task>
+    <task id="LOCAL-00099" summary="added TODO, tmp moved getBooks with made up list of books to LibraryService">
+      <created>1549599018538</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1549599018538</updated>
+    </task>
+    <task id="LOCAL-00100" summary="refactored Main class">
+      <created>1549599099749</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1549599099749</updated>
+    </task>
+    <task id="LOCAL-00101" summary="listBooks before asking which book to checkout, listReservations before asking which book to return, improved entering menu presentation">
+      <created>1549599538913</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1549599538913</updated>
+    </task>
+    <task id="LOCAL-00102" summary="added id and status to book">
+      <created>1549631289328</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1549631289329</updated>
+    </task>
+    <task id="LOCAL-00103" summary="library uses HashMap tro track list of books">
+      <created>1549631309153</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1549631309153</updated>
+    </task>
+    <task id="LOCAL-00104" summary="fixed LibraryService test to changes in the code, using HashMap instead of list to keep unique book ids, using status instead of two lists for books and reserved books">
+      <created>1549641447136</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1549641447137</updated>
+    </task>
+    <task id="LOCAL-00105" summary="updated code to handle a hashmap instead of a list&lt;book&gt;">
+      <created>1549641574438</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1549641574438</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTest_shouldThrowExceptionWhenInvalidOptionGiven - 2019.02.06 at 21h 35m 53s.xml">
-      <configuration name="MenuTest.shouldThrowExceptionWhenInvalidOptionGiven" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft - 2019.02.08 at 13h 49m 55s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WriterTest_shouldPrintAnyString - 2019.02.06 at 23h 09m 10s.xml">
-      <configuration name="WriterTest.shouldPrintAnyString" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft - 2019.02.08 at 13h 50m 01s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2019.02.06 at 23h 10m 37s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft - 2019.02.08 at 13h 50m 08s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2019.02.06 at 23h 13m 14s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldReturnBookWhenIsReserved - 2019.02.08 at 13h 50m 44s.xml">
+      <configuration name="LibraryServiceTest.shouldReturnBookWhenIsReserved" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WelcomeTest_shouldPrintWelcome - 2019.02.06 at 23h 32m 19s.xml">
-      <configuration name="WelcomeTest.shouldPrintWelcome" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldReturnBookWhenIsReserved - 2019.02.08 at 13h 50m 50s.xml">
+      <configuration name="LibraryServiceTest.shouldReturnBookWhenIsReserved" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTest - 2019.02.07 at 00h 01m 43s.xml">
-      <configuration name="MenuTest" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldReturnBookWhenIsReserved - 2019.02.08 at 13h 51m 13s.xml">
+      <configuration name="LibraryServiceTest.shouldReturnBookWhenIsReserved" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTest - 2019.02.07 at 00h 02m 11s.xml">
-      <configuration name="MenuTest" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReturnBookWhenIsNotReserved - 2019.02.08 at 13h 51m 26s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReturnBookWhenIsNotReserved" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuTest - 2019.02.07 at 00h 02m 31s.xml">
-      <configuration name="MenuTest" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReturnWhenIdIsInvalid - 2019.02.08 at 13h 51m 36s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReturnWhenIdIsInvalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_biblioteca_biblioteca_test - 2019.02.07 at 00h 11m 40s.xml">
-      <configuration name="All in biblioteca.biblioteca.test" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest_shouldNotReturnWhenIdIsInvalid - 2019.02.08 at 13h 51m 51s.xml">
+      <configuration name="LibraryServiceTest.shouldNotReturnWhenIdIsInvalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_biblioteca_biblioteca_test - 2019.02.07 at 00h 12m 29s.xml">
-      <configuration name="All in biblioteca.biblioteca.test" configurationId="JUnit" />
+    <history-entry file="LibraryServiceTest - 2019.02.08 at 13h 52m 04s.xml">
+      <configuration name="LibraryServiceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43456000" />
+    <option name="totallyTimeSpent" value="84949000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33163264" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38265306" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.4973262" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501221" side_tool="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Build" order="12" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4993895" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.4367347" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501221" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32857144" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4993895" weight="0.327551" />
+      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -757,25 +880,26 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" weight="0.32941177" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.4973262" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501221" side_tool="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Build" order="12" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4993895" weight="0.32941177" />
+      <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.32941177" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3828877" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.498779" weight="0.32857144" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.4973262" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.501221" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.32857144" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4993895" weight="0.32834226" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -790,32 +914,44 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed parameter from MenuOption object" />
-    <MESSAGE value="added name to Menu, toString() prints the menu line" />
-    <MESSAGE value="removed \n new line from toString" />
-    <MESSAGE value="created MenuTest class, test assert that menu is shown" />
-    <MESSAGE value="asserted that and exceptions ins thrown when a invalid option is given" />
-    <MESSAGE value="created Menu class to display menu and get options to execute" />
-    <MESSAGE value="moved MenuOption class to entity package" />
-    <MESSAGE value="created Reader class to handle user input" />
-    <MESSAGE value="renamed Presenter class to Writer" />
-    <MESSAGE value="renamed test class" />
-    <MESSAGE value="removed empty test" />
-    <MESSAGE value="renamed test class name" />
-    <MESSAGE value="renamed GreetingPrinter service to Welcome service, sounds better" />
-    <MESSAGE value="renamed class to Library" />
-    <MESSAGE value="fixed WelcomeTest" />
-    <MESSAGE value="simplified method name" />
-    <MESSAGE value="moved menu navigation status attributes to Menu class, refactored dependency classes names" />
-    <MESSAGE value="changed status messages" />
-    <MESSAGE value="using reflection to invoke method dynamically by the given String method name" />
-    <MESSAGE value="fixed ids, start at zero" />
-    <MESSAGE value="fixed menu options index, starts at zero" />
-    <MESSAGE value="Main calls service.library to execute the action which was read and parsed from user input" />
-    <MESSAGE value="fixed test for new &quot;Close&quot; option" />
-    <MESSAGE value="added new &quot;Close option&quot;" />
-    <MESSAGE value="implemented close() method which retunrs a QUIT status to menu service" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented close() method which retunrs a QUIT status to menu service" />
+    <MESSAGE value="commented code for refactoring" />
+    <MESSAGE value="fixed welcome message" />
+    <MESSAGE value="fixed toString to pass test" />
+    <MESSAGE value="refactoring Library service test class" />
+    <MESSAGE value="improved attribute name and getter names" />
+    <MESSAGE value="added assertion for returning a book" />
+    <MESSAGE value="implemented library service that lists books, lists reservations, performs checkout and return of books by giving the bookId" />
+    <MESSAGE value="fixed typo in welcome message" />
+    <MESSAGE value="renamed to WelcomeService" />
+    <MESSAGE value="simplified menu class" />
+    <MESSAGE value="implemented MenuBuilder class to build string of menus" />
+    <MESSAGE value="renamed class to Builder" />
+    <MESSAGE value="created MenuService which child classes can extends to access options" />
+    <MESSAGE value="set attributes as protected" />
+    <MESSAGE value="Created MenuViewer and MenuRouter services that extends MenuService, moved to service.menu package" />
+    <MESSAGE value="implemented name getter" />
+    <MESSAGE value="handle switch case through the LibraryService options registered on menu" />
+    <MESSAGE value="improved MenuViewer presentation" />
+    <MESSAGE value="added TODO, tmp moved getBooks with made up list of books to LibraryService" />
+    <MESSAGE value="refactored Main class" />
+    <MESSAGE value="listBooks before asking which book to checkout, listReservations before asking which book to return, improved entering menu presentation" />
+    <MESSAGE value="added id and status to book" />
+    <MESSAGE value="library uses HashMap tro track list of books" />
+    <MESSAGE value="fixed LibraryService test to changes in the code, using HashMap instead of list to keep unique book ids, using status instead of two lists for books and reserved books" />
+    <MESSAGE value="updated code to handle a hashmap instead of a list&lt;book&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated code to handle a hashmap instead of a list&lt;book&gt;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -828,13 +964,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/FakeLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/FakeLibrary.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -849,13 +979,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/EmptyMockLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/EmptyMockLibrary.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -895,51 +1019,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/FakeOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/FakePrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -954,171 +1037,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/MenuOption.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/FakeOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/MockLibrary.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/MockEmptyLibrary.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/WriterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/FakePrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/LibraryInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/WelcomeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="375" column="18" selection-start-line="375" selection-start-column="18" selection-end-line="375" selection-end-column="18" />
+          <folding>
+            <element signature="e#15711#15712#0" expanded="true" />
+            <element signature="e#15747#15748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/BuilderTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/LibraryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Welcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/LibraryInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/MockLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/MockEmptyLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/WelcomeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#291#292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="150">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/WriterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/WelcomeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="129" lean-forward="true" selection-start-line="23" selection-start-column="129" selection-end-line="23" selection-end-column="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="558">
+          <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuViewerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/function/BiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/LibraryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <element signature="method#setMockBooks#0;class#LibraryServiceTest#0" />
+            <element signature="method#setLibraryService#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReturnEmptyWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReturnListOfBooksWhenLibraryHasBooks#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReturnEmptyWhenNoBooksAreReserved#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReturnListOfReservedBooksWhenBooksAreReserved#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReserveBookWhenValidIdIsGiven#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldNotReserveBookWhenInvalidIdIsGiven#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldNotReserveBookWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldRemoveBookFromListOnCheckout#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReserveMultipleBooksWhenAvailable#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldReturnBookWhenIsReserved#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldNotReturnBookWhenIsNotReserved#0;class#LibraryServiceTest#0" />
+            <element signature="method#shouldNotReturnWhenIdIsInvalid#0;class#LibraryServiceTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setLibrary#0;class#LibraryService#0" />
+            <element signature="method#listBooks#0;class#LibraryService#0" />
+            <element signature="e#532#662#0" />
+            <element signature="e#590#678#1" />
+            <element signature="method#listReservations#0;class#LibraryService#0" />
+            <element signature="e#889#1054#0" />
+            <element signature="e#948#987#1" />
+            <element signature="method#checkoutBook#0;class#LibraryService#0" />
+            <element signature="e#1110#1142#1" />
+            <element signature="e#1243#1274#1" />
+            <element signature="method#returnBook#0;class#LibraryService#0" />
+            <element signature="e#1369#1406#1" />
+            <element signature="e#1584#1615#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1175,7 +1321,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>test|biblioteca.biblioteca</last-edited>
+          <last-edited>main|biblioteca.biblioteca</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
