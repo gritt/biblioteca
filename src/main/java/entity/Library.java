@@ -13,7 +13,6 @@ public class Library {
         this.books = books;
     }
 
-
     public List<Book> getBooks() {
         return books;
     }
@@ -25,7 +24,6 @@ public class Library {
     public void addBook(Book book) {
         this.books.add(book);
     }
-
 
     public List<Book> getReservedBooks() {
         return reservedBooks;
