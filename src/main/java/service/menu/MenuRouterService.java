@@ -1,28 +1,84 @@
 package service.menu;
 
+import entity.Book;
 import entity.Library;
 import io.Reader;
 import io.Writer;
 import service.LibraryService;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MenuRouterService extends MenuService {
 
     private LibraryService libraryService;
 
     public MenuRouterService(Writer writer, Reader reader) {
-
         super(writer, reader);
-
         /*
          * init library service with some books
          */
-
-        // TODO @gritt, refactor where does books source, best fit might not be LibraryService.getBooks()
         libraryService = new LibraryService();
 
         libraryService.setLibrary(
-                new Library(LibraryService.getBooks())
+                new Library(initBooks())
         );
+    }
+
+    private Map<Integer, Book> initBooks() {
+
+        Map<Integer, Book> books = new HashMap<Integer, Book>();
+
+        Book designPatterns = new Book()
+                .setId(11)
+                .setAvailable(true)
+                .setName("Design Patterns, Elements of Reusable Object-Oriented-Software")
+                .setAuthor("Erich Gama")
+                .setYear(1994);
+
+        Book cleanCode = new Book()
+                .setId(22)
+                .setAvailable(true)
+                .setName("Clean Code")
+                .setAuthor("Robert C Martin")
+                .setYear(2008);
+
+        Book theCleanCoder = new Book()
+                .setId(33)
+                .setAvailable(true)
+                .setName("The Clean Coder")
+                .setAuthor("Robert C Martin")
+                .setYear(2011);
+
+        Book commandLineKungFu = new Book()
+                .setId(44)
+                .setAvailable(true)
+                .setName("Command Line Kung Fu")
+                .setAuthor("Jason Cannon")
+                .setYear(2014);
+
+        Book dataScienceFromScratch = new Book()
+                .setId(55)
+                .setAvailable(true)
+                .setName("Data Science From Scratch")
+                .setAuthor("Joel Grus")
+                .setYear(2015);
+
+        Book pythonTheBible = new Book()
+                .setId(66)
+                .setAvailable(true)
+                .setName("Python, The Bible")
+                .setAuthor("Maurice J. Thompson")
+                .setYear(2018);
+
+        books.put(designPatterns.getId(), designPatterns);
+        books.put(cleanCode.getId(), cleanCode);
+        books.put(theCleanCoder.getId(), theCleanCoder);
+        books.put(commandLineKungFu.getId(), commandLineKungFu);
+        books.put(dataScienceFromScratch.getId(), dataScienceFromScratch);
+        books.put(pythonTheBible.getId(), pythonTheBible);
+
+        return books;
     }
 
     public boolean handle() {
