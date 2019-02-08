@@ -42,6 +42,11 @@ public class MenuRouterService extends MenuService {
                 return true;
             }
             case 3: {
+
+                String listOfBooks = libraryService.listBooks();
+                writer.print(listOfBooks);
+                writer.print("Which book do you want to checkout? ");
+
                 int targetBookId = getNumberOptionFromStdin();
 
                 String response = "Sorry, that book is unavailable.\n";
@@ -53,6 +58,11 @@ public class MenuRouterService extends MenuService {
                 return true;
             }
             case 4: {
+
+                String listOfReservations = libraryService.listReservations();
+                writer.print(listOfReservations);
+                writer.print("Which book do you want to return? ");
+
                 int targetBookId = getNumberOptionFromStdin();
 
                 String response = "That's not a valid book to return.\n";
@@ -61,19 +71,16 @@ public class MenuRouterService extends MenuService {
                 }
 
                 writer.print(response);
-                break;
+                return true;
             }
             case 0: {
                 writer.print("Bye Bye! \n");
-                appShouldKeepRunning = false;
-                break;
+                return false;
             }
             default: {
                 return true;
             }
         }
-
-        return appShouldKeepRunning;
     }
 
     private int getMenuOptionFromStdin() {
@@ -83,7 +90,7 @@ public class MenuRouterService extends MenuService {
 
             for (Option menuOption : options) {
                 if (menuOption.getId() == targetOption) {
-                    writer.print("........................"+menuOption.getName()+"........................");
+                    writer.print("........................" + menuOption.getName() + "........................");
                     return targetOption;
                 }
             }
