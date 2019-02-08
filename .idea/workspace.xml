@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c56a8256-1426-4994-b403-51325a91a831" name="Default Changelist" comment="book has id">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java" afterDir="false" />
-    </list>
+    <list default="true" id="c56a8256-1426-4994-b403-51325a91a831" name="Default Changelist" comment="book has id" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,37 +23,49 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setLibrary#0;class#LibraryService#0" />
+                <element signature="method#listBooks#0;class#LibraryService#0" />
+                <element signature="method#listReservations#0;class#LibraryService#0" />
+                <element signature="method#checkoutBook#0;class#LibraryService#0" />
+                <element signature="method#returnBook#0;class#LibraryService#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/Option.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuViewerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,75 +77,10 @@
             <state relative-caret-position="105">
               <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
-                <element signature="e#176#177#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#458#459#0" expanded="true" />
                 <element signature="e#490#491#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setLibrary#0;class#LibraryService#0" />
-                <element signature="method#listBooks#0;class#LibraryService#0" />
-                <element signature="e#532#662#0" />
-                <element signature="e#590#678#1" />
-                <element signature="method#listReservations#0;class#LibraryService#0" />
-                <element signature="e#889#1054#0" />
-                <element signature="e#948#987#1" />
-                <element signature="method#checkoutBook#0;class#LibraryService#0" />
-                <element signature="e#1110#1142#1" />
-                <element signature="e#1243#1274#1" />
-                <element signature="method#returnBook#0;class#LibraryService#0" />
-                <element signature="e#1369#1406#1" />
-                <element signature="e#1584#1615#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/service/LibraryServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-              <folding>
-                <element signature="method#setMockBooks#0;class#LibraryServiceTest#0" />
-                <element signature="method#setLibraryService#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReturnEmptyWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReturnListOfBooksWhenLibraryHasBooks#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReturnEmptyWhenNoBooksAreReserved#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReturnListOfReservedBooksWhenBooksAreReserved#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReserveBookWhenValidIdIsGiven#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldNotReserveBookWhenInvalidIdIsGiven#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldNotReserveBookWhenLibraryIsEmpty#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldRemoveBookFromListOnCheckout#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReserveMultipleBooksWhenAvailable#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldReturnBookWhenIsReserved#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldNotReturnBookWhenIsNotReserved#0;class#LibraryServiceTest#0" />
-                <element signature="method#shouldNotReturnWhenIdIsInvalid#0;class#LibraryServiceTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -264,14 +206,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,21 +222,6 @@
               <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biblioteca" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -454,14 +373,7 @@
       <workItem from="1549250774609" duration="363000" />
       <workItem from="1549251238914" duration="48386000" />
       <workItem from="1549559656534" duration="29104000" />
-      <workItem from="1549628141723" duration="6872000" />
-    </task>
-    <task id="LOCAL-00057" summary="implemented close() method which retunrs a QUIT status to menu service">
-      <created>1549505608658</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1549505608658</updated>
+      <workItem from="1549628141723" duration="7669000" />
     </task>
     <task id="LOCAL-00058" summary="fixed identation">
       <created>1549506926150</created>
@@ -799,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549641574438</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="moved initBooks logic to MenuRouterService">
+      <created>1549641643730</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1549641643730</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,7 +754,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84949000" />
+    <option name="totallyTimeSpent" value="85746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,7 +833,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commented code for refactoring" />
     <MESSAGE value="fixed welcome message" />
     <MESSAGE value="fixed toString to pass test" />
     <MESSAGE value="refactoring Library service test class" />
@@ -939,7 +857,8 @@
     <MESSAGE value="library uses HashMap tro track list of books" />
     <MESSAGE value="fixed LibraryService test to changes in the code, using HashMap instead of list to keep unique book ids, using status instead of two lists for books and reserved books" />
     <MESSAGE value="updated code to handle a hashmap instead of a list&lt;book&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated code to handle a hashmap instead of a list&lt;book&gt;" />
+    <MESSAGE value="moved initBooks logic to MenuRouterService" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved initBooks logic to MenuRouterService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1145,34 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuViewerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/Option.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1180,17 +1071,6 @@
           <folding>
             <element signature="e#358#359#0" expanded="true" />
             <element signature="e#385#386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1236,35 +1116,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="165">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setLibrary#0;class#LibraryService#0" />
-            <element signature="method#listBooks#0;class#LibraryService#0" />
-            <element signature="e#532#662#0" />
-            <element signature="e#590#678#1" />
-            <element signature="method#listReservations#0;class#LibraryService#0" />
-            <element signature="e#889#1054#0" />
-            <element signature="e#948#987#1" />
-            <element signature="method#checkoutBook#0;class#LibraryService#0" />
-            <element signature="e#1110#1142#1" />
-            <element signature="e#1243#1274#1" />
-            <element signature="method#returnBook#0;class#LibraryService#0" />
-            <element signature="e#1369#1406#1" />
-            <element signature="e#1584#1615#1" />
+            <element signature="method#MenuRouterService#0;class#MenuRouterService#0" />
+            <element signature="method#initBooks#0;class#MenuRouterService#0" />
+            <element signature="method#handle#0;class#MenuRouterService#0" />
+            <element signature="e#743#2435#0" />
+            <element signature="e#766#912#1" />
+            <element signature="e#933#1086#1" />
+            <element signature="e#1107#1654#1" />
+            <element signature="e#1488#1570#1" />
+            <element signature="e#1675#2248#1" />
+            <element signature="e#2075#2164#1" />
+            <element signature="e#2269#2359#1" />
+            <element signature="e#2381#2425#1" />
+            <element signature="method#getMenuOptionFromStdin#0;class#MenuRouterService#0" />
+            <element signature="e#2498#2943#0" />
+            <element signature="e#2600#2846#1" />
+            <element signature="e#2658#2832#1" />
+            <element signature="e#2964#3084#0" />
+            <element signature="method#getNumberOptionFromStdin#0;class#MenuRouterService#0" />
+            <element signature="e#3149#3202#0" />
+            <element signature="e#3223#3345#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuRouterService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LibraryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        <state relative-caret-position="165">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setLibrary#0;class#LibraryService#0" />
+            <element signature="method#listBooks#0;class#LibraryService#0" />
+            <element signature="method#listReservations#0;class#LibraryService#0" />
+            <element signature="method#checkoutBook#0;class#LibraryService#0" />
+            <element signature="method#returnBook#0;class#LibraryService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/menu/MenuViewerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
