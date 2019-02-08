@@ -9,7 +9,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return name + " - " + author + ". (" + year + ")";
+        return name + " - " + author + ". " + year + "";
     }
 
     public Book setName(String name) {
