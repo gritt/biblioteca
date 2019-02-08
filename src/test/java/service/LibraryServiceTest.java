@@ -126,27 +126,6 @@ class LibraryServiceTest {
     }
 
     @Test
-    public void shouldReserveMultipleBooksWhenAvailable() {
-
-        Library libraryWithBooks = new Library(mockBooks);
-        libraryService.setLibrary(libraryWithBooks);
-
-        /*
-         * in mockBook, there are 3 books
-         *
-         * checkout index 0
-         *  -> index 0 and 1 left
-         * checkout index 1
-         *  -> index 0 left
-         * checkout index 0
-         *  -> none left
-         */
-        assertThat(libraryService.checkoutBook(0), is(true));
-        assertThat(libraryService.checkoutBook(1), is(true));
-        assertThat(libraryService.checkoutBook(0), is(true));
-    }
-
-    @Test
     public void shouldRemoveBookFromListOnCheckout() {
 
         Library libraryWithBooks = new Library(mockBooks);
@@ -164,5 +143,59 @@ class LibraryServiceTest {
         assertThat(libraryService.listBooks(), is(
                 "[0]. Book B - Robert C Martin. 2008\n"
         ));
+    }
+
+    @Test
+    public void shouldReserveMultipleBooksWhenAvailable() {
+
+        Library libraryWithBooks = new Library(mockBooks);
+        libraryService.setLibrary(libraryWithBooks);
+
+        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(0), is(true));
+    }
+
+    @Test
+    public void shouldNotReserveMultipleBooksWhenThereAreNoBooksLeft() {
+        Library libraryWithBooks = new Library(mockBooks);
+        libraryService.setLibrary(libraryWithBooks);
+
+        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(0), is(true));
+
+        assertThat(libraryService.checkoutBook(0), is(false));
+    }
+
+    @Test
+    public void shouldReturnBookWhenIsReserved() {
+
+        Library libraryWithBooks = new Library(mockBooks);
+        libraryService.setLibrary(libraryWithBooks);
+
+        libraryService.checkoutBook(0);
+
+        assertThat(libraryService.returnBook(0), is(true));
+    }
+
+    @Test
+    public void shouldNotReturnBookWhenIsNotReserved() {
+
+        Library libraryWithBooks = new Library(mockBooks);
+        libraryService.setLibrary(libraryWithBooks);
+
+        assertThat(libraryService.returnBook(0), is(false));
+    }
+
+    @Test
+    public void shouldNotReturnWhenIdIsInvalid() {
+
+        Library libraryWithBooks = new Library(mockBooks);
+        libraryService.setLibrary(libraryWithBooks);
+
+        libraryService.checkoutBook(0);
+
+        assertThat(libraryService.returnBook(1), is(false));
     }
 }
