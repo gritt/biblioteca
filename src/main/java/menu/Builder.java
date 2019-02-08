@@ -6,12 +6,12 @@ import java.io.PrintStream;
 
 import java.util.List;
 
-public class MenuBuilder {
+public class Builder {
 
     private Writer writer;
     private List<Option> menuOptions;
 
-    public MenuBuilder(List<Option> menuOptions, PrintStream printStream) {
+    public Builder(List<Option> menuOptions, PrintStream printStream) {
         this.writer = new Writer(printStream);
         this.menuOptions = menuOptions;
     }
