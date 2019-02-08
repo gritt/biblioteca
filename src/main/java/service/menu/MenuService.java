@@ -8,10 +8,10 @@ import java.util.List;
 
 public class MenuService {
 
-    private Writer writer;
-    private Reader reader;
+    protected Writer writer;
+    protected Reader reader;
 
-    private List<Option> options = new ArrayList<>();
+    protected List<Option> options = new ArrayList<>();
 
     public MenuService(Writer writer, Reader reader) {
         this.writer = writer;
