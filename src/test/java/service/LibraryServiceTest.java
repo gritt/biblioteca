@@ -8,37 +8,65 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 class LibraryServiceTest {
 
-    private List<Book> mockBooks = new ArrayList<>();
+    private Map<Integer, Book> mockBooks = new HashMap<Integer, Book>();
 
     private LibraryService libraryService;
 
     @BeforeEach
     public void setMockBooks() {
 
-        Book designPatterns = new Book()
+        Book bookA = new Book()
+                .setId(11)
+                .setAvailable(true)
                 .setName("Book A")
                 .setAuthor("Erich Gama")
                 .setYear(1994);
 
-        Book cleanCode = new Book()
+        Book bookB = new Book()
+                .setId(22)
+                .setAvailable(true)
                 .setName("Book B")
                 .setAuthor("Robert C Martin")
                 .setYear(2008);
 
-        Book theCleanCoder = new Book()
+        Book bookC = new Book()
+                .setId(33)
+                .setAvailable(true)
                 .setName("Book C")
                 .setAuthor("Robert C Martin")
                 .setYear(2011);
 
+        Book bookD = new Book()
+                .setId(44)
+                .setAvailable(false)
+                .setName("Book D")
+                .setAuthor("Joel Grus")
+                .setYear(2015);
 
-        mockBooks.add(designPatterns);
-        mockBooks.add(cleanCode);
-        mockBooks.add(theCleanCoder);
+        Book bookE = new Book()
+                .setId(55)
+                .setAvailable(false)
+                .setName("Book E")
+                .setAuthor("Maurice J. Thompson")
+                .setYear(2018);
+
+        /*
+         * available books
+         */
+        mockBooks.put(bookA.getId(), bookA);
+        mockBooks.put(bookB.getId(), bookB);
+        mockBooks.put(bookC.getId(), bookC);
+
+        /*
+         * unavailable books
+         */
+        mockBooks.put(bookD.getId(), bookD);
+        mockBooks.put(bookE.getId(), bookE);
     }
 
     @BeforeEach
@@ -50,9 +78,9 @@ class LibraryServiceTest {
     @Test
     public void shouldReturnEmptyWhenLibraryIsEmpty() {
 
-        Library emptyLibrary = new Library(new ArrayList<>());
+        Library empty = new Library(new HashMap<Integer, Book>());
 
-        libraryService.setLibrary(emptyLibrary);
+        libraryService.setLibrary(empty);
 
         assertThat(libraryService.listBooks(), is(""));
     }
@@ -65,18 +93,18 @@ class LibraryServiceTest {
         libraryService.setLibrary(libraryWithBooks);
 
         assertThat(libraryService.listBooks(), is(
-                "[0]. Book A - Erich Gama. 1994\n" +
-                        "[1]. Book B - Robert C Martin. 2008\n" +
-                        "[2]. Book C - Robert C Martin. 2011\n"
+                "[33]. Book C - Robert C Martin. 2011\n" +
+                        "[22]. Book B - Robert C Martin. 2008\n" +
+                        "[11]. Book A - Erich Gama. 1994\n"
         ));
     }
 
     @Test
     public void shouldReturnEmptyWhenNoBooksAreReserved() {
 
-        Library emptyLibrary = new Library(new ArrayList<>());
+        Library empty = new Library(new HashMap<Integer, Book>());
 
-        libraryService.setLibrary(emptyLibrary);
+        libraryService.setLibrary(empty);
 
         assertThat(libraryService.listReservations(), is(""));
     }
@@ -84,15 +112,13 @@ class LibraryServiceTest {
     @Test
     public void shouldReturnListOfReservedBooksWhenBooksAreReserved() {
 
-        Library libraryWithReservations = new Library(new ArrayList<>());
-        libraryWithReservations.addReservation(mockBooks.get(0));
-        libraryWithReservations.addReservation(mockBooks.get(1));
+        Library library = new Library(mockBooks);
 
-        libraryService.setLibrary(libraryWithReservations);
+        libraryService.setLibrary(library);
 
         assertThat(libraryService.listReservations(), is(
-                "[0]. Book A - Erich Gama. 1994\n" +
-                        "[1]. Book B - Robert C Martin. 2008\n"
+                "[55]. Book E - Maurice J. Thompson. 2018\n" +
+                        "[44]. Book D - Joel Grus. 2015\n"
         ));
     }
 
@@ -102,7 +128,7 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(11), is(true));
     }
 
     @Test
@@ -112,15 +138,15 @@ class LibraryServiceTest {
 
         libraryService.setLibrary(libraryWithBooks);
 
-        assertThat(libraryService.checkoutBook(4), is(false));
+        assertThat(libraryService.checkoutBook(100), is(false));
     }
 
     @Test
     public void shouldNotReserveBookWhenLibraryIsEmpty() {
 
-        Library emptyLibrary = new Library(new ArrayList<>());
+        Library empty = new Library(new HashMap<Integer, Book>());
 
-        libraryService.setLibrary(emptyLibrary);
+        libraryService.setLibrary(empty);
 
         assertThat(libraryService.checkoutBook(0), is(false));
     }
@@ -128,20 +154,20 @@ class LibraryServiceTest {
     @Test
     public void shouldRemoveBookFromListOnCheckout() {
 
-        Library libraryWithBooks = new Library(mockBooks);
-        libraryService.setLibrary(libraryWithBooks);
+        Library library = new Library(mockBooks);
+        libraryService.setLibrary(library);
 
-        libraryService.checkoutBook(0);
+        libraryService.checkoutBook(11);
 
         assertThat(libraryService.listBooks(), is(
-                "[0]. Book B - Robert C Martin. 2008\n" +
-                        "[1]. Book C - Robert C Martin. 2011\n"
+                "[33]. Book C - Robert C Martin. 2011\n" +
+                        "[22]. Book B - Robert C Martin. 2008\n"
         ));
 
-        libraryService.checkoutBook(1);
+        libraryService.checkoutBook(22);
 
         assertThat(libraryService.listBooks(), is(
-                "[0]. Book B - Robert C Martin. 2008\n"
+                "[33]. Book C - Robert C Martin. 2011\n"
         ));
     }
 
@@ -151,9 +177,9 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        assertThat(libraryService.checkoutBook(0), is(true));
-        assertThat(libraryService.checkoutBook(0), is(true));
-        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(22), is(true));
+        assertThat(libraryService.checkoutBook(11), is(true));
+        assertThat(libraryService.checkoutBook(33), is(true));
     }
 
     @Test
@@ -161,11 +187,11 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        assertThat(libraryService.checkoutBook(0), is(true));
-        assertThat(libraryService.checkoutBook(0), is(true));
-        assertThat(libraryService.checkoutBook(0), is(true));
+        assertThat(libraryService.checkoutBook(11), is(true));
+        assertThat(libraryService.checkoutBook(22), is(true));
+        assertThat(libraryService.checkoutBook(33), is(true));
 
-        assertThat(libraryService.checkoutBook(0), is(false));
+        assertThat(libraryService.checkoutBook(11), is(false));
     }
 
     @Test
@@ -174,9 +200,7 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        libraryService.checkoutBook(0);
-
-        assertThat(libraryService.returnBook(0), is(true));
+        assertThat(libraryService.returnBook(44), is(true));
     }
 
     @Test
@@ -185,7 +209,7 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        assertThat(libraryService.returnBook(0), is(false));
+        assertThat(libraryService.returnBook(33), is(false));
     }
 
     @Test
@@ -194,8 +218,6 @@ class LibraryServiceTest {
         Library libraryWithBooks = new Library(mockBooks);
         libraryService.setLibrary(libraryWithBooks);
 
-        libraryService.checkoutBook(0);
-
-        assertThat(libraryService.returnBook(1), is(false));
+        assertThat(libraryService.returnBook(200), is(false));
     }
 }
