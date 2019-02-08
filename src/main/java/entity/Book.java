@@ -2,14 +2,33 @@ package entity;
 
 public class Book {
 
+    private int id;
+    private boolean available;
     private String name;
     private String author;
     private int year;
 
-
     @Override
     public String toString() {
-        return name + " - " + author + ". " + year + "";
+        return "[" + id + "]. " + name + " - " + author + ". " + year + "";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Book setId(int id) {
+        this.id = id;
+        return this;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public Book setAvailable(boolean available) {
+        this.available = available;
+        return this;
     }
 
     public Book setName(String name) {
