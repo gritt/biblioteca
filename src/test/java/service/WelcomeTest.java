@@ -16,6 +16,6 @@ class WelcomeTest {
         Welcome welcome = new Welcome(printStream);
         welcome.show();
 
-        assertThat(printStream.printedString(), is("Welcome to Library. Your one-stop-shop for great book titles in Bangalore!\n"));
+        assertThat(printStream.printedString(), is("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!\n"));
     }
 }
